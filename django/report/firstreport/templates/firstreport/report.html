@@ -4,8 +4,10 @@
     <h1>Report {{ report.id }}</h1>
     <ul>
         <li>City: {{ report.city }}</li>
-        <li>Destination: {{ report.city }}</li>
-        <li>Duration: {{ report.city }} minutes</li>
+        <li>Customer: {{ report.customername }}</li>
+        <li>Start: {{ report.startdate }} days</li>
+        <li>Finish: {{ report.finishdate }} days</li>
+        <li>Duration: {{ report.duration_def }} days</li>
     </ul>
-    <a href="{% url 'report23' %}">All Reports</a>
+    <a href="{% url 'reports' %}">All Reports</a>
 {% endblock %}
