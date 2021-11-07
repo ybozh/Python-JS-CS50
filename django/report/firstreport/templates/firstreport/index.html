@@ -1,0 +1,17 @@
+{% extends "firstreport/layout.html" %}
+
+{% block body %}
+    <h1>Reports:</h1>
+
+    <!-- <a href="#">{{a}}</a> -->
+
+    {% for report in a %}
+    <li><a href="{% url 'report' report.id %}">Report - {{ report.city }}</a></li>
+    {% endfor %}
+
+{% endblock %}
+
+
+        <!-- {% for report in a %}
+            <li><a href="{% url 'flight' flight.id %}">Flight {{ report.city }}</a>: {{ flight.origin }} to {{ flight.destination }}</li>
+        {% endfor %} -->

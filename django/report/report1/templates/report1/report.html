@@ -1,0 +1,11 @@
+{% extends "report1/layout.html" %}
+
+{% block body %}
+    <h1>Report {{ report.id }}</h1>
+    <ul>
+        <li>Customer: {{ report.customer }}</li>
+        <li>Start Date: {{ report.startdate }}</li>
+        <li>Duration: {{ report.duration }} minutes</li>
+    </ul>
+    <!-- <a href="{% url 'index' %}">All Reports</a> -->
+{% endblock %}
